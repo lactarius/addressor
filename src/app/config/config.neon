@@ -1,0 +1,31 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# http://nette.org/security-warning
+#
+parameters:
+
+
+php:
+	date.timezone: Europe/Prague
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: *Module\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+doctrine:
+	user: lcdb
+	password: tequila
+	dbname: lcdb
+
+includes:
+	- includes/location.neon		# location module (using Google maps)
+	- includes/core.neon			# base module
+	- includes/doctrine.neon		# doctrine forever
+	- includes/flame.neon			# last in definition

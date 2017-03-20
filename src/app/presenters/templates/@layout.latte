@@ -1,0 +1,34 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+*}
+
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>{if isset($title)}{$title}{else}Giant{/if}</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+
+		<link rel="stylesheet" href="{$basePath}/css/main.css">
+		{block head}{/block}
+	</head>
+
+	<body>
+		<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
+			{$flash->message}
+		</div>
+
+		{include content}
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoc4JoSXwW0UMp0P-Fvte6wqUqRGoGyFM&libraries=places"></script>
+		<script src="{$basePath}/js/main.js"></script>
+		<script src="{$basePath}/js/special.js"></script>
+		{block scripts}{/block}
+	</body>
+</html>

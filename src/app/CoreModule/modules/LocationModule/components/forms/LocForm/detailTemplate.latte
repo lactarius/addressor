@@ -1,0 +1,50 @@
+{snippet flash}
+<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
+	{$flash->message}
+</div>
+{/snippet}
+
+<form n:name=detailForm class="ajax">
+	<div class="row">
+		
+		<input n:name=formatted>
+		
+		<div class="form-group col-xs-12">
+			<input n:name=place class="form-control">
+		</div>
+		
+		<div class="form-group col-xs-12 col-sm-6">
+			<input n:name=street class="form-control">
+		</div>
+		<div class="form-group col-xs-4 col-sm-3">
+			<input n:name=reg_nr class="form-control">
+		</div>
+		<div class="form-group col-xs-4 col-sm-3">
+			<input n:name=house_nr class="form-control">
+		</div>
+		<div class="form-group col-xs-4 col-sm-3">
+			<input n:name=postal class="form-control">
+		</div>
+		<div class="form-group col-xs-6 col-sm-4">
+			<input n:name=district class="form-control">
+		</div>
+		<div class="form-group col-xs-6 col-sm-5">
+			<input n:name=part class="form-control">
+		</div>
+		<div class="form-group col-xs-5">
+			<input n:name=city class="form-control">
+		</div>
+		<div class="form-group col-xs-4">
+			<input n:name=region class="form-control">
+		</div>
+		<div class="form-group col-xs-3">
+			<input n:name=country class="form-control">
+		</div>
+			
+		<div class="form-group">
+			<input type="submit" n:name=save class="btn btn-block btn-primary">
+		</div>
+	</div>
+</form>
+
+<div id="lc_map"></div>

@@ -1,0 +1,30 @@
+{snippet flash}
+<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
+	{$flash->message}
+</div>
+{/snippet}
+
+<form n:name=shortForm class="ajax">
+	<div class="row">
+		<div class="form-group col-xs-12">
+			<input n:name=place class="form-control">
+		</div>
+
+		<input n:name=formatted>
+		<input n:name=street>
+		<input n:name=reg_nr>
+		<input n:name=house_nr>
+		<input n:name=postal>
+		<input n:name=district>
+		<input n:name=part>
+		<input n:name=city>
+		<input n:name=region>
+		<input n:name=country>
+
+		<div class="form-group">
+			<input type="submit" n:name=save class="btn btn-block btn-primary">
+		</div>
+	</div>
+</form>
+
+<div id="lc_map"></div>

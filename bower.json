@@ -1,0 +1,21 @@
+{
+  "name": "giant",
+  "description": "Presenting sandbox",
+  "main": "src/www/index.php",
+  "authors": [
+    "PB"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "geocomplete": "^1.7.0"
+  }
+}

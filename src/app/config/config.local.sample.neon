@@ -1,0 +1,5 @@
+doctrine:
+	# for local mysql database
+	user: root
+	password: root
+	dbname: db

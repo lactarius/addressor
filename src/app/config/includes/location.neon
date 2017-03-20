@@ -1,0 +1,7 @@
+extensions:
+	location: LocationModule\DI\LocationExtension
+
+
+services:
+	- Location\Components\Forms\ILocFormFactory
+	- Location\Model\LocationFacade
