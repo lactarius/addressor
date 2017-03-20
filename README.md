@@ -21,6 +21,6 @@ Edit username, password and database name in config.local.neon.
 Then create empty database.  
 Create tables:  
 `./bin/r.sh orm:schema-tool:create`  
-Import countries to database - from the res/countries.sql file.  
+Import countries into database - from the res/countries.sql file.  
 
 ### That's all!
