@@ -1,5 +1,5 @@
 # addressor
-Search address on map / Get address from map by pointing using Google Places. The address can be with one click saved to the database with anti-redundant principle.
+Search address on map / Get address from map by pointing using Google Geocoding API. The address can be with one click saved to the database with anti-redundant principle.
 
 ## Installation
 Nette directories & bash scripts:  
